@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Red Hat Display', sans-serif !important;
+}
+
+
+@layer components {
+    .input {
+        @apply border-gray-400 border rounded p-2 pl-3 outline-red-400 w-full mx-auto text-sm md:text-base xl:text-base;
+    }
+    .label{
+        @apply text-black font-semibold text-xs md:text-base xl:text-base;
+    }
+    .upinput{
+        @apply flex flex-col items-start gap-2 w-full;
+    }
+  }
+  
