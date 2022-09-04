@@ -2,11 +2,11 @@
 
 ## Login Page
 
-<img src = "https://github.com/poyrazavsever/React-Tailwind-Login-Register_Page/blob/master/public/login.PNG" width = "200">
+<img src = "https://github.com/poyrazavsever/React-Tailwind-Login-Register_Page/blob/master/public/login.PNG">
 
 
 ## Register Page
-<img src = "https://github.com/poyrazavsever/React-Tailwind-Login-Register_Page/blob/master/public/register.PNG" width = "200">
+<img src = "https://github.com/poyrazavsever/React-Tailwind-Login-Register_Page/blob/master/public/register.PNG">
 
 
 ## Validation
