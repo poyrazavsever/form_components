@@ -20,7 +20,7 @@ function Login() {
                 </div>
 
                 <div className='upinput'>
-                    <label htmlFor="loginPassword" className='label'>Password</label>
+                    <label htmlFor="loginPassword" className='label'>Parola</label>
 
                     <HidePassword />
 
