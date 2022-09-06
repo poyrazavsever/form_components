@@ -1,12 +1,17 @@
 import React from 'react'
-function Input({ inputType, placeholder, label, errorType, max, min, errors, register }) {
+function Input({textarea, inputType, placeholder, label, errorType, max, min, errors, register }) {
 
     return (
         <div className='upinput'>
 
             <label htmlFor="name" className='label'>{label}</label>
 
-            <input type={inputType} id='password' className='input' placeholder={placeholder} {...register(errorType, { required: true, maxLength: max, minLength: min })} />
+            {textarea ?  
+            <textarea type={inputType} id='password' className='input h-24' placeholder={placeholder} {...register(errorType, { required: true, maxLength: max, minLength: min })} ></textarea>
+
+            : <input type={inputType} id='password' className='input' placeholder={placeholder} {...register(errorType, { required: true, maxLength: max, minLength: min })} />}
+
+           
 
             {/* Name */}
             <>

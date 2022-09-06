@@ -22,7 +22,7 @@ function App() {
           <button onClick={openMenuBtn}>
             <AiOutlineMenu />
           </button>
-          <div className={`absolute top-0 left-0 h-screen w-full transition-all duration-500 flex flex-col gap-5 justify-center z-20 items-center backdrop-blur-lg ${menuStyle === "hidden" ? "translate-x-full" : "translate-x-0"}`} >
+          <div className={`absolute top-0 left-0 h-screen w-full transition-all duration-500 flex flex-col gap-5 justify-center z-20 items-center backdrop-blur-lg ${menuStyle === "hidden" ? "-translate-y-full" : "translate-y-0"}`} >
 
             <button onClick={openMenuBtn} className="text-5xl text-red-900">
               <AiOutlineClose />
