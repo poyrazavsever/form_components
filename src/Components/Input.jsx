@@ -1,5 +1,5 @@
 import React from 'react'
-function RegisterInput({ inputType, placeholder, label, errorType, max, min, errors, register }) {
+function Input({ inputType, placeholder, label, errorType, max, min, errors, register }) {
 
     return (
         <div className='upinput'>
@@ -50,4 +50,4 @@ function RegisterInput({ inputType, placeholder, label, errorType, max, min, err
     )
 }
 
-export default RegisterInput
+export default Input
