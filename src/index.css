@@ -12,7 +12,7 @@
 
 @layer components {
     .input {
-        @apply border-gray-400 border rounded p-2 pl-3 outline-red-400 w-full mx-auto text-sm md:text-base xl:text-base;
+        @apply border border-zinc-400 rounded p-2 pl-3 outline-red-400 w-full mx-auto text-sm md:text-base xl:text-base placeholder:text-xs;
     }
     .label{
         @apply text-black font-semibold text-xs md:text-base xl:text-base;
@@ -21,7 +21,7 @@
         @apply flex flex-col items-start gap-1 w-full relative z-0;
     }
     .submitButton{
-        @apply w-full bg-red-400 text-sm md:text-base xl:text-lg transition-colors text-white py-3 rounded-md mt-4 hover:bg-red-500;
+        @apply w-full bg-red-400 text-sm md:text-base xl:text-lg transition-colors duration-300 text-white py-3 rounded-md mt-4 hover:bg-red-600;
     }
 
     .error{

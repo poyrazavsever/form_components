@@ -1,12 +1,16 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Input from './Input';
+import { AiOutlineClose, AiFillCheckCircle } from "react-icons/ai"
+import { useState } from 'react';
 
 function Register() {
 
+    const [submit, setSubmit] = useState(false)
+
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data) => {
-        console.log(data)
+        setSubmit(true)
     }
 
     return (
@@ -18,11 +22,38 @@ function Register() {
 
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-7 w-full">
 
-                <Input inputType="text" placeholder="örn: pav-sev" label="Kullanıcı Adı" errorType="name" min="8" max="32" register={register} errors={errors} />
+                <div className='relative'>
+                    <Input inputType="text" placeholder="örn: pav-sev" label="Kullanıcı Adı" errorType="name" min="8" max="32" register={register} errors={errors} />
 
-                <Input inputType={"email"} placeholder="example@pavsever.com" label="E-posta" errorType="email" register={register} errors={errors} />
+                    {errors.name ?
+                        <div className='absolute top-8 right-2'>
+                            <AiOutlineClose className='text-red-500' />
+                        </div> : ""
+                    }
+                </div>
 
-                <Input inputType="password" label="Parola" errorType="password" min="8" register={register} errors={errors} />
+
+                <div className='relative'>
+                    <Input inputType={"email"} placeholder="example@pavsever.com" label="E-posta" errorType="email" register={register} errors={errors} />
+                    {errors.name ?
+                        <div className='absolute top-8 right-2'>
+                            <AiOutlineClose className='text-red-500' />
+                        </div> : ""
+                    }
+                </div>
+
+
+                <div className='relative'>
+
+                    <Input inputType="password" label="Parola" errorType="password" min="8" register={register} errors={errors} />
+
+                    {errors.name ?
+                        <div className='absolute top-8 right-2'>
+                            <AiOutlineClose className='text-red-500' />
+                        </div> : ""
+                    }
+
+                </div>
 
                 <button type="submit" className='submitButton'>Gönder</button>
             </form>
